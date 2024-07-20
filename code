@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import requests
+import numpy as np
+import plotly.express as px
+import plotly.offline as pf
+import plotly.graph_objects as po
+
+pacientes = pd.read_csv('dados_pacientes.csv', sep=';')
+clinicos = pd.read_csv('dados_clinicos.csv', sep=';')
+estados = pd.read_csv('estado_regiao.csv', sep=';', encoding='latin-1')
+
+pacientes.info()
+clinicos.info()
+estados.info()
