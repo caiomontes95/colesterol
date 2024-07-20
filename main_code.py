@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import requests
 import numpy as np
+import seaborn as sns
 import plotly.express as px
 import plotly.offline as pf
 import plotly.graph_objects as po
@@ -41,4 +42,13 @@ def calcular_wcss(dados_clientes):
     wcss.append(kmeans.inertia_)
   return wcss
 
+dados_clientes = tabela_completa[['peso', 'colesterol']]
+dados_clientes.head()
+
+plt.figure(figsize=(12, 7))
+sns.histplot(cluster_clientes['salario'], kde=True, kde_kws={'bw_adjust': 1.5})
+plt.xlabel('Salário')
+plt.ylabel('Frequência')
+plt.title('Distribuição de Salários')
+plt.show()
 
