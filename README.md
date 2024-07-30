@@ -1,3 +1,3 @@
 # Colesterol
 
-Visite o dashboard interativo: 
+Visite o dashboard interativo: https://colesterol-dashboard.streamlit.app/
